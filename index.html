@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CAU GuestBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/board.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="assets/board.png" alt="icon" class="main-icon">
+            CAU GuestBook
+        </h1>
+    </header>
+
+    <main class="main-container">
+        <!-- 왼쪽: 방명록 리스트 -->
+        <section class="guestbook-list">
+            <h2>
+                <img src="assets/abc.png" alt="icon" class="section-icon">
+                방명록 구경하기
+            </h2>
+            <div id="guestbook-entries">
+                <!-- 작성된 방명록 카드가 여기에 추가될 예정 -->
+            </div>
+        </section>
+
+    <!-- 오른쪽: 작성 폼 -->
+        <section class="guestbook-form">
+        
+            <h2>
+                <img src="assets/chalk.png" alt="icon" class="section-icon">
+                방명록 작성하기
+            </h2>
+            <form id="guestbook-form">
+                <input type="text" id="title" placeholder="제목을 입력하세요." required>
+                <input type="text" id="author" placeholder="이름을 입력하세요." required>
+                <textarea id="content" placeholder="내용을 입력하세요." required></textarea>
+                <input type="password" id="password" placeholder="비밀번호 설정하기" required>
+                <button type="submit">방명록 남기기</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 LikeLion 13th GuestBook | All rights reserved.</p>
+        <p>FRONTEND | 김유겸</p>
+        <p>BACKEND | 최서영</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

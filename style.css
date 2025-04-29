@@ -1,0 +1,147 @@
+body {
+    font-family: 'Nanum Brush Script', cursive;
+    background-color: #2e5339; /* 칠판 초록 */
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0; /* 연한 흰색 글씨 */
+  }
+  
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #2e5339; /* 배경은 칠판색 유지 */
+    border-bottom: 3px solid #ffffff; /* 하얀 분필 선 */
+}
+  
+#logo {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+  
+h1 {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.main-icon {
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.section-icon {
+    width: 45px;
+    height: 45px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    min-height: 85vh; /* 화면 세로의 85% 차지하게 설정 */
+    align-items: flex-start; /* 위쪽 정렬 (센터 말고) */
+}
+  
+.guestbook-list {
+    flex: 2;
+    margin-right: 20px;
+    border: 2px dashed #ffffff; /* 분필 테두리 느낌 */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3b6949; /* 칠판보다 살짝 밝은 초록 */
+
+    min-height: 1200px; /* 기본 높이 확보 */
+    max-height: 1200px; /* 스크롤은 유지 */
+    overflow-y: auto; /* 세로 스크롤만 활성화 */
+}
+  
+.guestbook-form {
+    flex: 1;
+    border: 2px dashed #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    
+    background-color: #3b6949;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4c7a5a;
+    color: #ffffff;
+}
+  
+input::placeholder, textarea::placeholder {
+    color: #cccccc; /* 연한 회색 (분필 느낌) */
+}
+  
+button {
+    padding: 10px;
+    background-color: #6f9e7a; /* 연한 녹색 분필 색상 */
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #82b18e;
+}
+
+.delete-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #ff5c5c; /* 진한 빨간색 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial, sans-serif; /* 삭제 버튼만 일반 폰트로 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* 글자에 약간 그림자 줘서 분필 느낌 */
+}
+  
+.delete-btn:hover {
+    background-color: #ff1f1f; /* hover 시 더 강렬한 빨강 */
+}
+  
+.guestbook-item {
+    background-color: #4c7a5a;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ffffff; /* 흰색 분필 테두리 */
+}
+  
+footer {
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #cccccc;
+    background-color: #2e5339;
+    border-top: 2px solid #ffffff;
+}
+  
